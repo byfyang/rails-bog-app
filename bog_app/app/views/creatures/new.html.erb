@@ -1,0 +1,12 @@
+<!-- Create new creatures FORM page -->
+
+<%= form_for @creature do |f| %>
+	<p>
+	Name: <%= f.text_field :name %>
+	</p>
+	Description: <%= f.text_area :description %>
+	<p>
+	<%= f.submit "Save Creature" %>
+	</p>
+
+<%end%>
